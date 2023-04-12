@@ -1,0 +1,369 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "PT Sans", sans-serif;
+}
+
+body {
+    background-color: #f2f1ee;
+}
+
+.img-whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 25px rgb(23 23 23 / 25%);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+@media (max-width: 675px) {
+    .container {
+        width: 300px;
+    }
+    .img-whatsapp {
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 10px;
+        box-shadow: 0 0 25px rgb(23 23 23 / 25%);
+        border-radius: 50%;
+        padding: 4px;
+    }
+}
+
+.btn-main {
+    margin-top: 10px;
+    padding: 3px 8px;
+    background-color: #f1e0db;
+    border: 1px solid black;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.55);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+}
+
+.btn-main:hover {
+    background-color: #b3a7e9;
+    color: white;
+    
+}
+
+/*   HEADER   */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+}
+@media (max-width: 675px) {
+    nav {
+        display: none;
+    }
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #b3a7e9;
+}
+.link:hover {
+    border-bottom: 2px solid #b3a7e9;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 700;
+    transition: border-bottom-color 0.2s ease-in-out; /* Agrega una transición suave */
+    color: #b3a7e9;
+}
+
+.menu-burguer {
+    display: none;
+}
+
+@media (max-width: 675px) {
+    .menu-burguer {
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+}
+
+/*   MAIN   */
+
+h1 {
+    font-size: 28px;
+}
+main {
+    background-color: #f1e0db;
+    width: 100%;
+    height: 400px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.main-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-main {
+    padding: 20px;
+}
+@media (max-width: 675px) {
+    main{
+        height: 400px;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    .img-main{
+        width: 300px;
+        height: 300px;
+    }
+    h1{
+        font-size: 18px;
+    }
+}
+/*   SECTION-CONOCEME   */
+
+.section-conoceme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    color: #8996a0;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+
+.conoceme-img {
+    margin-right: 60px;
+}
+.title-conoceme {
+    margin: 10px;
+    color: #3d3d3d;
+    font-weight: 100;
+}
+@media (max-width: 675px) {
+    .section-conoceme{
+        flex-direction: column;
+    }
+    .text{
+        width: 300px;
+    }
+    .conoceme-img{
+        margin-right: 0px;
+    }
+}
+
+/*   SECTION CURSO   */
+
+#curso {
+    background-color: #f1e0db;
+    display: flex;
+    flex-direction: column;
+}
+
+#curso h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #3d3d3d;
+}
+
+.curso-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.title-curso {
+    color: #3d3d3d;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.text-curso {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+/*   SECTION LECTURA PERSONAL  */
+
+.section-lp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lp-img {
+    padding: 10px;
+    margin-right: 40px;
+    position: relative;
+    animation-name: moverImagen;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moverImagen {
+    from {
+        top: 0;
+    }
+    to {
+        top: 60px;
+    }
+}
+
+.lp-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #3d3d3d;
+    font-weight: 100;
+}
+
+.lp-text {
+    color: rgba(0, 0, 0, 0.55);
+    width: 500px;
+    margin-bottom: 30px;
+}
+@media (max-width: 675px) {
+    .lp-img{
+        margin: 0px;
+    }
+    .section-lp {
+        flex-direction: column;
+    }
+    .lp-text{
+        width: 300px;
+    }
+    .lp-title{
+        margin-top: 45px;
+    }
+}
+/*   FOOTER   */
+
+footer {
+    height: 180px;
+    background-color: #f1e0db;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    width: 80%;
+    text-align: center;
+    border-top: 0.5px solid #b3a7e9;
+    padding: 2px;
+    color: #807f7ff6;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-footer {
+    width: 150px;
+    height: 150px;
+}
+
+.links-footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.links-footer a {
+    font-size: 19px;
+    color: #b3a7e9;
+}
+
+.redes-footer {
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-redes {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #b3a7e9;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #b3a7e98e;
+}
+
+.img-redes:hover{
+    background-color: #b3a7e9;
+    border: 2px solid white;
+    padding: 7px;
+}
+
+h4 {
+    font-size: 19px;
+    color: #b3a7e9;
+}
+@media (max-width: 675px) {
+    footer{
+        height: 320px;
+    }
+    .footer-content{
+        flex-direction: column-reverse;
+
+    }
+    .links-footer{
+        flex-direction: row;
+        width: 250px;
+        height: 50px;
+        justify-content: space-between;
+    }
+    .img-footer {
+        width: 100px;
+        height: 100px;
+    }
+}
