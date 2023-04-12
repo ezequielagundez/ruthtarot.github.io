@@ -21,8 +21,6 @@ body {
     padding: 4px;
 }
 
-
-
 .container {
     width: 900px;
     margin: auto;
@@ -58,7 +56,6 @@ body {
 .btn-main:hover {
     background-color: #b3a7e9;
     color: white;
-    
 }
 
 /*   HEADER   */
@@ -111,8 +108,49 @@ li {
         width: 25px;
         height: 25px;
         margin-left: 10px;
+        cursor: pointer;
+    }
+    .section-header__redes {
+        display: none;
     }
 }
+
+/*  MODAL  */
+.navbar-modal {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 30px;
+    height: 130px;
+}
+@media (max-width: 675px) {
+    .navbar-modal {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 30px;
+        height: 130px;
+    }
+
+    .link_modal {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        transition: border-bottom-color 0.2s ease-in-out; /* Agrega una transición suave */
+        color: #b3a7e9;
+    }
+    .btn-close{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        margin-left: 343px;
+        margin-top: 0px;
+        position: absolute;
+    }
+}
+
 
 /*   MAIN   */
 
@@ -130,8 +168,6 @@ main {
     align-items: center;
 }
 
-
-
 .main-items {
     display: flex;
     flex-direction: column;
@@ -142,17 +178,17 @@ main {
     padding: 20px;
 }
 @media (max-width: 675px) {
-    main{
+    main {
         height: 400px;
     }
-    .main-content{
+    .main-content {
         flex-direction: column;
     }
-    .img-main{
+    .img-main {
         width: 300px;
         height: 300px;
     }
-    h1{
+    h1 {
         font-size: 18px;
     }
 }
@@ -169,23 +205,22 @@ main {
     margin-bottom: 30px;
 }
 
-
 .conoceme-img {
     margin-right: 60px;
 }
 .title-conoceme {
-    margin: 10px;
+    margin: 10px 0px;
     color: #3d3d3d;
     font-weight: 100;
 }
 @media (max-width: 675px) {
-    .section-conoceme{
+    .section-conoceme {
         flex-direction: column;
     }
-    .text{
+    .text {
         width: 300px;
     }
-    .conoceme-img{
+    .conoceme-img {
         margin-right: 0px;
     }
 }
@@ -264,16 +299,16 @@ main {
     margin-bottom: 30px;
 }
 @media (max-width: 675px) {
-    .lp-img{
+    .lp-img {
         margin: 0px;
     }
     .section-lp {
         flex-direction: column;
     }
-    .lp-text{
+    .lp-text {
         width: 300px;
     }
-    .lp-title{
+    .lp-title {
         margin-top: 45px;
     }
 }
@@ -338,7 +373,7 @@ footer p {
     background-color: #b3a7e98e;
 }
 
-.img-redes:hover{
+.img-redes:hover {
     background-color: #b3a7e9;
     border: 2px solid white;
     padding: 7px;
@@ -349,14 +384,13 @@ h4 {
     color: #b3a7e9;
 }
 @media (max-width: 675px) {
-    footer{
+    footer {
         height: 320px;
     }
-    .footer-content{
+    .footer-content {
         flex-direction: column-reverse;
-
     }
-    .links-footer{
+    .links-footer {
         flex-direction: row;
         width: 250px;
         height: 50px;
