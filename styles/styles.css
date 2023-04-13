@@ -10,7 +10,22 @@ body {
     background-color: #f2f1ee;
 }
 
+.text-whatsapp{
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 240px;
+    border: 5px solid white;
+    background-color: #b3a7e9;
+    padding: 12px;
+    color: white;
+    border-radius: 15px;
+    z-index: 2;
+}
+
 .img-whatsapp {
+    display: none;
     position: fixed;
     width: 55px;
     height: 55px;
@@ -19,7 +34,13 @@ body {
     box-shadow: 0 0 25px rgb(23 23 23 / 25%);
     border-radius: 50%;
     padding: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
+
+.show {
+    opacity: 1;
+  }
 
 .container {
     width: 900px;
@@ -31,8 +52,8 @@ body {
     }
     .img-whatsapp {
         position: fixed;
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
         bottom: 20px;
         right: 10px;
         box-shadow: 0 0 25px rgb(23 23 23 / 25%);
@@ -131,7 +152,7 @@ li {
         justify-content: space-between;
         width: 100%;
         padding: 0px 30px;
-        height: 130px;
+        height: 150px;
     }
 
     .link_modal {
@@ -140,12 +161,13 @@ li {
         font-weight: 700;
         transition: border-bottom-color 0.2s ease-in-out; /* Agrega una transición suave */
         color: #b3a7e9;
+        font-size: 20px;
     }
     .btn-close{
         width: 20px;
         height: 20px;
         display: flex;
-        margin-left: 343px;
+        margin-left: 333px;
         margin-top: 0px;
         position: absolute;
     }
@@ -274,6 +296,7 @@ main {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
 }
 
 @keyframes moverImagen {
